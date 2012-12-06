@@ -1,37 +1,28 @@
-# template-cookbook
+# mod_extract_forwarded
 
 ## Description
 
-A cool description – preferably wrapped at 80 characters.
+Installs/configures mod_extract_forwarded.
 
 ## Requirements
 
 ### Platforms
 
 * RedHat 6.3 (Santiago)
-* Ubuntu 11.10 (Oneiric)
-* Ubuntu 12.04 (Precise)
 
 ### Cookbooks
 
 * apache2
-* logrotate
 
 ## Attributes
 
-* `node["template_cookbook"]["version"]` - Version of template-cookbook to
-  install.
-* `node["template_cookbook"]["user"]` - User for template-cookbook.
-* `node["template_cookbook"]["group"]` - Group for template-cookbook.
+* `node['apache']['mod_extract_forwarded']['accept']` - array of trusted XFF proxy IPs, default to []
 
 ## Recipes
 
-* `recipe[template-cookbook]` will install template-cookbook.
-* `recipe[template-cookbook::alternate]` will install alternate
-  template-cookbook.
+* `recipe[mod_extract_forwarded]` will install/configure mod_extract_forwarded.
 
 ## Usage
 
-A short write-up of any usage specific instructions.  For example, default
-passwords, examples of attributes that alter recipe behavior, and
-auto-discovery of dependant services.
+* Set accepted XFF proxy IPs in `node['apache']['mod_extract_forwarded']['accept']`
+* Add `recipe[mod_extract_forwarded]` to your node's run list

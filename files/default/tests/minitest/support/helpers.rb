@@ -1,5 +1,5 @@
 module Helpers
-  module TemplateCookbook
+  module ModExtractForwardedCookbook
     require 'chef/mixin/shell_out'
     include Chef::Mixin::ShellOut
     include MiniTest::Chef::Assertions
