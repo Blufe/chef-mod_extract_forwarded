@@ -3,7 +3,7 @@ maintainer        "The Wharton School - The University of Pennsylvania"
 maintainer_email  "bflad@wharton.upenn.edu"
 license           "Apache 2.0"
 description       "Installs/configures mod_extract_forwarded."
-version           "0.1.1"
+version           "0.1.2"
 recipe            "mod_extract_forwarded", "Installs/configures mod_extract_forwarded."
 
 %w{ apache2 }.each do |cb|
