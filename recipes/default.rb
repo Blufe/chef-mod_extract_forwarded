@@ -3,6 +3,10 @@ include_recipe "apache2::mod_proxy"
 
 package "mod_extract_forwarded"
 
+file "#{node['apache']['dir']}/conf.d/mod_extract_forwarded.conf" do
+  action :delete
+end
+
 apache_conf "extract_forwarded"
 
 # can't just use apache_module because need to load after mod_proxy configuration

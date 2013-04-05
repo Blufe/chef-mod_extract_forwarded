@@ -1,3 +1,7 @@
+## 0.1.6
+
+* Delete conf.d/mod_extract_forwarded.conf
+
 ## 0.1.5
 
 * include_recipe "apache2::mod_proxy"
