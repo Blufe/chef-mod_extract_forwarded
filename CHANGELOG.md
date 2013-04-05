@@ -1,3 +1,7 @@
+## 0.1.4
+
+* Manually configure apache_conf and apache_module due to load ordering issue
+
 ## v0.1.3 ##
 
 * Remove extraneous mod_ from apache_module and template filename
