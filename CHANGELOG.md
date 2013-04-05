@@ -1,3 +1,7 @@
+## 0.1.5
+
+* include_recipe "apache2::mod_proxy"
+
 ## 0.1.4
 
 * Manually configure apache_conf and apache_module due to load ordering issue

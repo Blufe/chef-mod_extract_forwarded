@@ -1,4 +1,6 @@
 
+include_recipe "apache2::mod_proxy"
+
 package "mod_extract_forwarded"
 
 apache_conf "extract_forwarded"
